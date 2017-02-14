@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='toggleSearch()' >
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)='choosePosition()' >
+        <ion-icon name="ios-locate-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar #searchbar placeholder="Suchen" [hidden]="!search"></ion-searchbar>
+  <div id="map" #map></div>
+</ion-content>

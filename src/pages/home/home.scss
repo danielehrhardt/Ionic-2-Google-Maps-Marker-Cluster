@@ -1,0 +1,13 @@
+page-home {
+  // map style
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+
+  ion-searchbar{
+    position: absolute;
+    opacity: .7;
+    z-index: 3;
+  }
+}
