@@ -1,6 +1,7 @@
 import { Component, NgZone, ViewChild, ElementRef } from '@angular/core';
 import { ActionSheetController, AlertController, App, LoadingController, NavController, Platform, ToastController } from 'ionic-angular';
-import { Geolocation } from 'ionic-native';
+import { Geolocation } from '@ionic-native/geolocation';
+
 import { Observable } from 'rxjs/Observable';
 import { Storage } from '@ionic/storage';
 
@@ -35,7 +36,8 @@ export class HomePage {
     public platform: Platform,
     public alertCtrl: AlertController,
     public storage: Storage,
-    public actionSheetCtrl: ActionSheetController
+    public actionSheetCtrl: ActionSheetController,
+    public geolocation: Geolocation
   ) {
     this.platform.ready().then(() => this.loadMaps());
     this.regionals = [{
@@ -314,7 +316,7 @@ export class HomePage {
 
     let locationOptions = { timeout: 10000, enableHighAccuracy: true };
 
-    Geolocation.getCurrentPosition(locationOptions).then(
+    this.geolocation.getCurrentPosition(locationOptions).then(
       (position) => {
         this.loading.dismiss().then(() => {
 
