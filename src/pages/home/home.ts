@@ -279,7 +279,6 @@ export class HomePage {
               text: 'Reload',
               handler: () => {
                 this.getCurrentPosition();
-                actionSheet.dismiss();
               }
             },
             {
@@ -288,14 +287,12 @@ export class HomePage {
                 this.storage.set('lastLocation', null);
                 this.showToast('Location deleted!');
                 this.initializeMap();
-                actionSheet.dismiss();
               }
             },
             {
               text: 'Cancel',
               role: 'cancel',
               handler: () => {
-                actionSheet.dismiss();
               }
             }
           ]
