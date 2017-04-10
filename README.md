@@ -13,9 +13,9 @@ Functions
 Screenshots
 -----------
 
-![enter image description here]()
-![enter image description here]()
-![enter image description here]()
+![enter image description here](https://i.imgur.com/x1Rcbf4.png)
+![enter image description here](https://i.imgur.com/odHrbjk.png)
+![enter image description here](https://i.imgur.com/pyKhpVt.png)
 
 
 Changelog
