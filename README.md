@@ -1,5 +1,8 @@
 # Ionic-3-Google-Maps-Marker-Cluster
 
+
+![enter image description here](https://i.imgur.com/gieYy4A.jpg)
+
 Functions
 ---------
 
