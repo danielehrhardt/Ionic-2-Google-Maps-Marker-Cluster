@@ -45,6 +45,10 @@ export class HomePage {
       "latitude": 52.50094,
       "longitude": 13.29922,
     }, {
+      "title": "Marker 3",
+      "latitude": 52.50010,
+      "longitude": 13.29922,
+    }, {
       "title": "Marker 2",
       "latitude": 49.1028606,
       "longitude": 9.8426116
@@ -102,12 +106,15 @@ export class HomePage {
     // reference : https://github.com/driftyco/ionic/issues/7223
     this.addressElement = this.searchbar.nativeElement.querySelector('.searchbar-input');
     this.createAutocomplete(this.addressElement).subscribe((location) => {
+      console.log('Searchdata', location);
+
       let options = {
         center: location,
         zoom: 10
       };
       this.map.setOptions(options);
       this.addMarker(location, "Mein gesuchter Standort");
+
     });
   }
 
@@ -122,6 +129,7 @@ export class HomePage {
             message: 'Autocomplete returned place with no geometry'
           });
         } else {
+          console.log('CreateAutocomplete', place);
           sub.next(place.geometry.location);
           sub.complete();
         }
