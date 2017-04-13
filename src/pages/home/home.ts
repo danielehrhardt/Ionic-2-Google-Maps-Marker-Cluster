@@ -24,6 +24,7 @@ export class HomePage {
   loading: any;
   search: boolean = false;
   error: any;
+  switch: string = "map";
 
   regionals: any = [];
 
@@ -129,9 +130,10 @@ export class HomePage {
             message: 'Autocomplete returned place with no geometry'
           });
         } else {
-          console.log('CreateAutocomplete', place);
+          console.log('Search Lat', place.geometry.location.lat());
+          console.log('Search Lng', place.geometry.location.lng());
           sub.next(place.geometry.location);
-          sub.complete();
+          //sub.complete();
         }
       });
     });

@@ -4,17 +4,39 @@
       Ionic Blank
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)='toggleSearch()' >
+      <button ion-button icon-only (click)='toggleSearch()'>
         <ion-icon name="search"></ion-icon>
       </button>
-      <button ion-button icon-only (click)='choosePosition()' >
+      <button ion-button icon-only (click)='choosePosition()'>
         <ion-icon name="ios-locate-outline"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
+
 </ion-header>
 
+<div class="switch">
+  <button ion-button color="light" (click)="(switch = 'map'); resizeMap()" [class.active]="(switch == 'map')" icon-only><ion-icon name="map"></ion-icon></button>
+  <button ion-button color="light" (click)="(switch = 'list'); " [class.active]="(switch == 'list')" icon-only><ion-icon name="list"></ion-icon></button>
+</div>
+
 <ion-content>
-  <ion-searchbar #searchbar placeholder="Suchen" [hidden]="!search"></ion-searchbar>
-  <div id="map" #map></div>
+  <div [hidden]="!(switch == 'list')">
+    <ion-list>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="map" [class.hidemap]="!((switch == 'map') || error)">
+    <ion-searchbar #searchbar placeholder="Suchen" [hidden]="!search"></ion-searchbar>
+    <div id="map" #map></div>
+  </div>
 </ion-content>
