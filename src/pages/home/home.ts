@@ -176,31 +176,31 @@ export class HomePage {
         styles: [
           {
             height: 53,
-            url: "./assets/img/cluster/MapMarkerJS.png",
+            url: "assets/img/cluster/MapMarkerJS.png",
             width: 53,
             textColor: '#fff'
           },
           {
             height: 56,
-            url: "./assets/img/cluster/MapMarkerJS.png",
+            url: "assets/img/cluster/MapMarkerJS.png",
             width: 56,
             textColor: '#fff'
           },
           {
             height: 66,
-            url: "./assets/img/cluster/MapMarkerJS.png",
+            url: "assets/img/cluster/MapMarkerJS.png",
             width: 66,
             textColor: '#fff'
           },
           {
             height: 78,
-            url: "./assets/img/cluster/MapMarkerJS.png",
+            url: "assets/img/cluster/MapMarkerJS.png",
             width: 78,
             textColor: '#fff'
           },
           {
             height: 90,
-            url: "./assets/img/cluster/MapMarkerJS.png",
+            url: "assets/img/cluster/MapMarkerJS.png",
             width: 90,
             textColor: '#fff'
           }

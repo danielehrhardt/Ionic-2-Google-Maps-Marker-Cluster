@@ -1,4 +1,7 @@
-# Ionic-2-Google-Maps-Marker-Cluster
+# Ionic-3-Google-Maps-Marker-Cluster
+
+
+![enter image description here](https://i.imgur.com/gieYy4A.jpg)
 
 Functions
 ---------
@@ -13,6 +16,12 @@ Functions
 Screenshots
 -----------
 
-![enter image description here](http://fs5.directupload.net/images/170214/k5lvcikx.png)
-![enter image description here](http://fs5.directupload.net/images/170214/9ba8hf2g.png)
-![enter image description here](http://fs5.directupload.net/images/170214/lvp2xn8q.png)
+![enter image description here](https://i.imgur.com/x1Rcbf4.png)
+![enter image description here](https://i.imgur.com/odHrbjk.png)
+![enter image description here](https://i.imgur.com/pyKhpVt.png)
+
+
+Changelog
+-----------
+
+ - 0.0.2 Updated Project to Ionic 3
