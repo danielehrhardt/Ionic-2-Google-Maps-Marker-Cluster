@@ -11,6 +11,7 @@ Functions
     - Google Maps Autocomplete
     - Marker Cluster (Thanks to https://github.com/googlemaps/js-marker-clusterer)
  - Geolocation with save to Storage
+ - Tabs with Google Maps
 
 
 Screenshots
