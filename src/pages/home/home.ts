@@ -1,3 +1,4 @@
+import { identifierModuleUrl } from '@angular/compiler/compiler';
 import { Component, NgZone, ViewChild, ElementRef } from '@angular/core';
 import { ActionSheetController, AlertController, App, LoadingController, NavController, Platform, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
@@ -27,6 +28,7 @@ export class HomePage {
   switch: string = "map";
 
   regionals: any = [];
+  currentregional: any;
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -54,6 +56,10 @@ export class HomePage {
       "latitude": 49.1028606,
       "longitude": 9.8426116
     }];
+  }
+
+  viewPlace(id) {
+    console.log('Clicked Marker', id);
   }
 
 
@@ -176,6 +182,8 @@ export class HomePage {
             c.current = false;
             //c.infoWindow.close();
           }
+          this.currentregional = regional;
+          regional.current = true;
 
           //regional.infoWindow.open(this.map, regional.marker);
           this.map.panTo(regional.marker.getPosition());
